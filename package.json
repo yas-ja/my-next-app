@@ -45,8 +45,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --fix",
-      "vitest"
+      "eslint --fix"
     ]
   }
 }

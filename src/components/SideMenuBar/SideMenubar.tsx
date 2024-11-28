@@ -8,8 +8,7 @@ import {
   SidebarMenu,
 } from "../ui/sidebar";
 import { CiHome } from "react-icons/ci";
-import { FaPen, FaRegCalendarAlt } from "react-icons/fa";
-import { VscGraph } from "react-icons/vsc";
+import { FaPen, FaRegCalendarAlt, FaHistory } from "react-icons/fa";
 import { AiOutlineMoneyCollect } from "react-icons/ai";
 import { MenuItem } from "./MenuItem/MenuItem";
 
@@ -17,7 +16,7 @@ const MenuItemList: MenuItemType[] = [
   { title: "ホーム", link: "/", icon: <CiHome /> },
   { title: "入力", link: "/input", icon: <FaPen /> },
   { title: "カレンダー", link: "/calendar", icon: <FaRegCalendarAlt /> },
-  { title: "グラフ", link: "/graph", icon: <VscGraph /> },
+  { title: "履歴", link: "/history", icon: <FaHistory /> },
 ];
 
 export const SideMenubar = () => {

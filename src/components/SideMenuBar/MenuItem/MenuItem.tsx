@@ -2,6 +2,7 @@
 
 import { SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
 import { MenuItemType } from "@/types/MenuItemType";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export const MenuItem = ({ menuItem }: { menuItem: MenuItemType }) => {
@@ -11,10 +12,10 @@ export const MenuItem = ({ menuItem }: { menuItem: MenuItemType }) => {
       className={`${pathname === menuItem.link && "bg-slate-500 border-r-4 border-r-green-500"}`}
     >
       <SidebarMenuButton asChild>
-        <a href={menuItem.link}>
+        <Link href={menuItem.link}>
           {menuItem.icon}
           <span>{menuItem.title}</span>
-        </a>
+        </Link>
       </SidebarMenuButton>
     </SidebarMenuItem>
   );

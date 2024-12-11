@@ -1,5 +1,5 @@
 // サイドメニュー用type
-export type MenuItemType = {
+export type MenuNavItemType = {
   title: string;
   link: string;
   icon: React.ReactNode;

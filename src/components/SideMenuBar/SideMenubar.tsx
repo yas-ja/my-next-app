@@ -1,4 +1,4 @@
-import { MenuItemType } from "@/types/MenuItemType";
+import { MenuNavItemType } from "@/types/MenuNavItemType";
 import {
   Sidebar,
   SidebarContent,
@@ -10,9 +10,9 @@ import {
 import { CiHome } from "react-icons/ci";
 import { FaPen, FaRegCalendarAlt, FaHistory } from "react-icons/fa";
 import { AiOutlineMoneyCollect } from "react-icons/ai";
-import { MenuItem } from "./MenuItem/MenuItem";
+import { MenuNavItem } from "./MenuItem/MenuItem";
 
-const MenuItemList: MenuItemType[] = [
+const MenuNavItemList: MenuNavItemType[] = [
   { title: "ホーム", link: "/", icon: <CiHome /> },
   { title: "入力", link: "/input", icon: <FaPen /> },
   { title: "カレンダー", link: "/calendar", icon: <FaRegCalendarAlt /> },
@@ -32,8 +32,11 @@ export const SideMenubar = () => {
           </div>
           <SidebarGroupContent className="mt-5">
             <SidebarMenu className="gap-4">
-              {MenuItemList.map((menuItem) => (
-                <MenuItem key={menuItem.title} menuItem={menuItem} />
+              {MenuNavItemList.map((menuNavItem) => (
+                <MenuNavItem
+                  key={menuNavItem.title}
+                  menuNavItem={menuNavItem}
+                />
               ))}
             </SidebarMenu>
           </SidebarGroupContent>

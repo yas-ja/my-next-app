@@ -80,11 +80,17 @@ export const InputDetails = ({
         </label>
         <Input type="number" id="amount" name="amount" className="my-5" />
       </div>
-      <div className="my-5">
+      <div className="my-5 flex flex-col">
         <label htmlFor="memo" className="font-bold">
           メモ
         </label>
-        <Input type="text" id="memo" name="memo" className="my-5" />
+        <textarea
+          id="memo"
+          name="memo"
+          className="my-5 border border-black"
+          cols={30}
+          rows={5}
+        />
       </div>
       <div className="flex justify-between">
         <div className="my-5">

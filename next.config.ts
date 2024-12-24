@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: [
+    "@fullcalendar/common",
+    "@fullcalendar/daygrid",
+    "@fullcalendar/react",
+    "@fullcalendar/resource",
+    "@fullcalendar/resource-timeline",
+  ],
 };
 
 export default nextConfig;

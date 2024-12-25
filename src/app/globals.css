@@ -6,6 +6,42 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0;
+}
+.fc .fc-toolbar-title {
+  font-size: 1rem;
+  color: #37362f;
+}
+.fc .fc-button-primary {
+  font-size: 0.75rem;
+  background-color: #ffffff00;
+  color: #acaba9;
+  border: none;
+  outline: none;
+}
+.fc .fc-today-button {
+  background-color: #ffffff00;
+  color: #37362f;
+  border: none;
+  outline: none;
+}
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #ffffff00;
+  color: #acaba9;
+  box-shadow: none;
+}
+.fc .fc-button-primary:not(:disabled):focus,
+.fc .fc-button-primary:not(:disabled).fc-button-focus {
+  background-color: #ffffff00;
+  color: #acaba9;
+  box-shadow: none;
+}
+.fc .fc-today-button:disabled {
+  opacity: 1;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -33,6 +69,14 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -59,6 +103,14 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 

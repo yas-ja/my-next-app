@@ -1,7 +1,19 @@
-export default function Home() {
-  return (
-    <>
-      <div>Hello Next</div>
-    </>
-  );
-}
+"use client";
+
+import { isAuthenticatedSelector } from "@/redux/authSlice";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+
+const Root = () => {
+  const router = useRouter();
+  const isAuthenticated = useSelector(isAuthenticatedSelector);
+
+  const path = isAuthenticated ? "/home" : "/auth";
+
+  useEffect(() => {
+    router.push(path);
+  });
+};
+
+export default Root;

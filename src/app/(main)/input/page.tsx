@@ -1,5 +1,5 @@
 import { InputDetails } from "@/features/input/InputDetails";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/lib/ui/tabs";
 
 const Input = () => {
   return (

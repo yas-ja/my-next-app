@@ -6,7 +6,7 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
-} from "../ui/sidebar";
+} from "../../lib/ui/sidebar";
 import { CiHome } from "react-icons/ci";
 import { FaPen, FaRegCalendarAlt, FaHistory } from "react-icons/fa";
 import { AiOutlineMoneyCollect } from "react-icons/ai";

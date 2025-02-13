@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
 
 test("Page", () => {
-  expect(true).toBeTruthy();
+  expect(false).toBeFalsy();
 });

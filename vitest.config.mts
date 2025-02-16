@@ -8,8 +8,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: [
-      "C:/Users/PC_User/ghq/github.com/yas-ja/my-next-app/vitest.setup.ts",
-    ],
+    setupFiles: ["./vitest.setup.ts"],
   },
 });

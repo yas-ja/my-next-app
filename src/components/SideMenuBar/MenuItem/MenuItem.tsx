@@ -1,6 +1,6 @@
 "use client";
 
-import { SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
+import { SidebarMenuButton, SidebarMenuItem } from "@/lib/ui/sidebar";
 import { MenuNavItemType } from "@/types/MenuNavItemType";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

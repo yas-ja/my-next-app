@@ -9,7 +9,7 @@ const Root = () => {
   const router = useRouter();
   const isAuthenticated = useSelector(isAuthenticatedSelector);
 
-  const path = isAuthenticated ? "/home" : "/auth";
+  const path = isAuthenticated ? "/home" : "/auth/login";
 
   useEffect(() => {
     router.push(path);
